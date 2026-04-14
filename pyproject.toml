@@ -1,0 +1,13 @@
+[project]
+name = "template"
+version = "0.1.0"
+description = "template"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk[a2a]>=1.27.4",
+    "google-cloud-aiplatform[adk,agent-engines]>=1.141.0",
+    "google-genai>=1.67.0",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+]
