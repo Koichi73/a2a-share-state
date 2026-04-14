@@ -16,7 +16,7 @@ async def _forward_state_as_a2a_metadata(
     a2a_request: A2AMessage,
     parameters: ParametersConfig,
 ) -> tuple[A2AMessage, ParametersConfig]:
-    """before_request: session state の全キーを A2A metadata に載せる。"""
+    """before_request: Include all session state keys in the A2A metadata."""
     payload: dict[str, Any] = dict(ctx.session.state)
     if payload:
         parameters.request_metadata = {
