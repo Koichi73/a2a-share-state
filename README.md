@@ -4,6 +4,8 @@ A minimal example of sharing session state between ADK agents over the A2A proto
 
 ADK's A2A communication is stateless by design — session state is not shared across process boundaries. This sample demonstrates a pattern to bridge that gap by forwarding client-side session state through A2A request metadata, making it available on the server side for instruction template resolution.
 
+Blog: https://dev.to/koichi73/adk-passing-session-state-to-remote-agents-over-stateless-a2a-bfj
+
 ## Prerequisites
 
 - Python 3.11+
